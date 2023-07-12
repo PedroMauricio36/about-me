@@ -5,11 +5,11 @@
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     font-family: 'Roboto Mono', monospace;
-    /* 
+    /*
     6EDCD9 azul claro
     E15FED rosa
     9254C8 roxo
-    332FD0 azul 
+    332FD0 azul
     */
 }
 
@@ -31,11 +31,6 @@
     justify-items: center;
     align-items: center;
     border-radius: 150px;
-}
-
-.ul li {
-    border: none;
-    background: none;
 }
 
 /* ------------------------------------------ Introdução ------------------------------------------------------------------- */
@@ -143,4 +138,156 @@
 .quartoBanner {
     margin-top: 20px;
     background-image: url(./assets/teclado.jpg);
+}
+
+/* ------------------------------------------ Mobile -----------------------------------------------------------------------------*/
+
+@media (max-width: 515px) {
+    * {
+        color: #fff;
+        background: linear-gradient(300deg, #E15FED, #6EDCD9, #9254C8 );
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+        font-family: 'Roboto Mono', monospace;
+        /*
+        6EDCD9 azul claro
+        E15FED rosa
+        9254C8 roxo
+        332FD0 azul
+        */
+    }
+
+    .title {
+        text-align: center;
+        background: none;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        height: 45vh;
+        background-size: 100%;
+        background-position: center ;
+        justify-items: center;
+        align-items: center;
+        border-radius: 100px;
+    }
+
+    /* ------------------------------------------ Primeiro Quadro --------------------------------------------------------------- */
+
+    .primeiroBanner {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background-image: url(./assets/xboxJoystick.jpg);
+        background-size: 160%;
+    }
+
+    .img-primeiroBanner {
+        width: auto;
+        height: 180px;
+        border: solid 3px ;
+        border-radius: 40px;
+        grid-area: 2 / 2;
+        grid-row: span 2;
+    }
+
+    .mainTittle {
+        grid-column: span 3;
+        font-weight: 400;
+        display: none;
+    }
+
+    .sub1 {
+        font-weight: 300;
+        grid-area: 3 / 2;
+        grid-column: span 3;
+    }
+
+    .sub2 {
+        font-weight: 300;
+        grid-area: 4 / 2
+    }
+
+
+    /* ------------------------------------------ Segundo Quadro ---------------------------------------------------------------- */
+
+    .sub3 {
+        width: 150px;
+        grid-area: 1 / 1;
+    }
+
+    .sub4 {
+        width: 150px;
+        grid-area: 2 / 2;
+    }
+
+    .segundoBanner {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        background-image: url(./assets/ps4Joystick.jpg);
+    }
+
+    /* ------------------------------------------ Terceiro Quadro --------------------------------------------------------------- */
+
+    .terceiroBanner {
+        background-image: url(./assets/joystick.jpg);
+    }
+
+    .sub5 {
+        grid-area: 1 / 2;
+        margin-top: 7px;
+        grid-column: span 3;
+    }
+
+    .lista1 {
+        text-align: left;
+        grid-area: 3 / 1;
+        grid-column: span 2;
+        margin-bottom: 28px;
+        font-size: 1.1rem;
+    }
+
+    .lista1 li {
+        border: none;
+        background: none;
+    }
+
+    .joke {
+        text-align: end;
+    }
+
+    /* ------------------------------------------ Quarto Quadro ----------------------------------------------------------------- */
+
+    .sub6 {
+        grid-area: 1 / 2;
+        grid-column: span 3;
+        margin-top: 45px;
+    }
+
+    .lista2 {
+        text-align: left;
+        grid-area: 3 / 2;
+        grid-column: span 3;
+        margin: 0px;
+        margin-bottom: 45px;
+        margin-right: 30px;
+        font-size: 1rem;
+    }
+
+    .lista2 li {
+        text-align: center;
+        list-style-type: none;
+        border: none;
+        background: none;
+    }
+
+
+    .quartoBanner {
+        margin-top: 20px;
+        background-image: url(./assets/teclado.jpg);
+        background-size: 150%;
+    }
 }
